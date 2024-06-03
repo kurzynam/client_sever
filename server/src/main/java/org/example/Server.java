@@ -1,6 +1,7 @@
 package org.example;
 
 import java.io.*;
+import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
@@ -15,6 +16,7 @@ public class Server {
     private Map<String, Client> clientMap = new HashMap<>();
 
     public Server() throws IOException {
+       // ss = new ServerSocket(2137, 50, InetAddress.getByName("own_ip"));
         ss = new ServerSocket(2137);
     }
     public List<String> serverUsersLogins(){

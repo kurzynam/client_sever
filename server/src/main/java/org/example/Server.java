@@ -17,7 +17,6 @@ public class Server {
     public Server() throws IOException {
         ss = new ServerSocket(2137);
     }
-
     public List<String> serverUsersLogins(){
         return clientMap.keySet().stream().toList();
     }

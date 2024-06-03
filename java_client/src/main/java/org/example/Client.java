@@ -6,6 +6,7 @@ import java.net.Socket;
 
 public class Client implements Runnable {
     Socket socket;
+
     private BufferedReader reader;
     private PrintWriter writer;
 

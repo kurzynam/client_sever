@@ -53,7 +53,6 @@ public class Client implements Runnable{
     public String getLogin() {
         return login;
     }
-
     private void leave() throws IOException {
         socket.close();
         server.clientLeft(this);
